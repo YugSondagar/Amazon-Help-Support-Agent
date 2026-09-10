@@ -1,0 +1,683 @@
+{
+  "Trivial Baseline": {
+    "agent_name": "Trivial Baseline",
+    "sample_size": 200,
+    "intent_accuracy": 13.0,
+    "intent_macro_f1": 2.56,
+    "routing_accuracy": 65.0,
+    "routing_auto_handle_precision": 65.0,
+    "routing_auto_handle_recall": 100.0,
+    "routing_auto_handle_f1": 78.79,
+    "retrieval_hit_rate_at_3": 0.0,
+    "confusion_matrix": {
+      "labels": [
+        "account_login_security",
+        "billing_payment_issue",
+        "cancellation_order_change",
+        "missing_damaged_item",
+        "other_unclear",
+        "prime_digital_services",
+        "product_stock_inquiry",
+        "refund_return_request",
+        "shipping_delivery_status"
+      ],
+      "matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          21
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          20
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          21
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          25
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          24
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          20
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          19
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          24
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          26
+        ]
+      ]
+    },
+    "predictions_sample": [
+      {
+        "id": "g_001",
+        "message": "Where is my package #112-9482019? It was due yesterday.",
+        "true_intent": "shipping_delivery_status",
+        "pred_intent": "shipping_delivery_status",
+        "true_action": "auto_handle",
+        "pred_action": "auto_handle",
+        "routing_reason": "none",
+        "drafted_reply": "We're sorry for the inconvenience! Please DM us your order number so we can assist."
+      },
+      {
+        "id": "g_002",
+        "message": "Tracking number TBA94019241 has no updates for 4 days.",
+        "true_intent": "shipping_delivery_status",
+        "pred_intent": "shipping_delivery_status",
+        "true_action": "auto_handle",
+        "pred_action": "auto_handle",
+        "routing_reason": "none",
+        "drafted_reply": "We're sorry for the inconvenience! Please DM us your order number so we can assist."
+      },
+      {
+        "id": "g_003",
+        "message": "Package says delivered but doorstep is empty.",
+        "true_intent": "shipping_delivery_status",
+        "pred_intent": "shipping_delivery_status",
+        "true_action": "auto_handle",
+        "pred_action": "auto_handle",
+        "routing_reason": "none",
+        "drafted_reply": "We're sorry for the inconvenience! Please DM us your order number so we can assist."
+      },
+      {
+        "id": "g_004",
+        "message": "My delivery estimate got changed from Friday to Monday. Why?",
+        "true_intent": "shipping_delivery_status",
+        "pred_intent": "shipping_delivery_status",
+        "true_action": "auto_handle",
+        "pred_action": "auto_handle",
+        "routing_reason": "none",
+        "drafted_reply": "We're sorry for the inconvenience! Please DM us your order number so we can assist."
+      },
+      {
+        "id": "g_005",
+        "message": "Order #701-4419201 missed the prime same-day delivery cutoff.",
+        "true_intent": "shipping_delivery_status",
+        "pred_intent": "shipping_delivery_status",
+        "true_action": "auto_handle",
+        "pred_action": "auto_handle",
+        "routing_reason": "none",
+        "drafted_reply": "We're sorry for the inconvenience! Please DM us your order number so we can assist."
+      },
+      {
+        "id": "g_006",
+        "message": "The glass jar inside my Amazon box arrived completely shattered.",
+        "true_intent": "missing_damaged_item",
+        "pred_intent": "shipping_delivery_status",
+        "true_action": "auto_handle",
+        "pred_action": "auto_handle",
+        "routing_reason": "none",
+        "drafted_reply": "We're sorry for the inconvenience! Please DM us your order number so we can assist."
+      },
+      {
+        "id": "g_007",
+        "message": "I ordered 3 books in order #114-8849102 but only 2 were inside.",
+        "true_intent": "missing_damaged_item",
+        "pred_intent": "shipping_delivery_status",
+        "true_action": "auto_handle",
+        "pred_action": "auto_handle",
+        "routing_reason": "none",
+        "drafted_reply": "We're sorry for the inconvenience! Please DM us your order number so we can assist."
+      },
+      {
+        "id": "g_008",
+        "message": "Received wrong size shoes in my delivery today.",
+        "true_intent": "missing_damaged_item",
+        "pred_intent": "shipping_delivery_status",
+        "true_action": "auto_handle",
+        "pred_action": "auto_handle",
+        "routing_reason": "none",
+        "drafted_reply": "We're sorry for the inconvenience! Please DM us your order number so we can assist."
+      },
+      {
+        "id": "g_009",
+        "message": "Shampoo bottle leaked all over the other items in the parcel.",
+        "true_intent": "missing_damaged_item",
+        "pred_intent": "shipping_delivery_status",
+        "true_action": "auto_handle",
+        "pred_action": "auto_handle",
+        "routing_reason": "none",
+        "drafted_reply": "We're sorry for the inconvenience! Please DM us your order number so we can assist."
+      },
+      {
+        "id": "g_010",
+        "message": "Package box was ripped open and item was missing.",
+        "true_intent": "missing_damaged_item",
+        "pred_intent": "shipping_delivery_status",
+        "true_action": "auto_handle",
+        "pred_action": "auto_handle",
+        "routing_reason": "none",
+        "drafted_reply": "We're sorry for the inconvenience! Please DM us your order number so we can assist."
+      }
+    ]
+  },
+  "Simple Baseline": {
+    "agent_name": "Simple Baseline",
+    "sample_size": 200,
+    "intent_accuracy": 92.5,
+    "intent_macro_f1": 93.17,
+    "routing_accuracy": 84.5,
+    "routing_auto_handle_precision": 80.75,
+    "routing_auto_handle_recall": 100.0,
+    "routing_auto_handle_f1": 89.35,
+    "retrieval_hit_rate_at_3": 79.0,
+    "confusion_matrix": {
+      "labels": [
+        "account_login_security",
+        "billing_payment_issue",
+        "cancellation_order_change",
+        "missing_damaged_item",
+        "other_unclear",
+        "prime_digital_services",
+        "product_stock_inquiry",
+        "refund_return_request",
+        "shipping_delivery_status"
+      ],
+      "matrix": [
+        [
+          19,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          20,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          18,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          19,
+          3,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          23,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          20,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          19,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          23,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          24
+        ]
+      ]
+    },
+    "predictions_sample": [
+      {
+        "id": "g_001",
+        "message": "Where is my package #112-9482019? It was due yesterday.",
+        "true_intent": "shipping_delivery_status",
+        "pred_intent": "shipping_delivery_status",
+        "true_action": "auto_handle",
+        "pred_action": "auto_handle",
+        "routing_reason": "none",
+        "drafted_reply": "We want to get this sorted out for you! Please send us a private message with your tracking and order ID."
+      },
+      {
+        "id": "g_002",
+        "message": "Tracking number TBA94019241 has no updates for 4 days.",
+        "true_intent": "shipping_delivery_status",
+        "pred_intent": "shipping_delivery_status",
+        "true_action": "auto_handle",
+        "pred_action": "auto_handle",
+        "routing_reason": "none",
+        "drafted_reply": "We're sorry to hear your package is delayed! Please send us a DM with your order number so we can investigate with the carrier."
+      },
+      {
+        "id": "g_003",
+        "message": "Package says delivered but doorstep is empty.",
+        "true_intent": "shipping_delivery_status",
+        "pred_intent": "shipping_delivery_status",
+        "true_action": "auto_handle",
+        "pred_action": "auto_handle",
+        "routing_reason": "none",
+        "drafted_reply": "We understand your concern regarding the missing delivery. Please DM us your order details and we'll process a replacement or investigation right away."
+      },
+      {
+        "id": "g_004",
+        "message": "My delivery estimate got changed from Friday to Monday. Why?",
+        "true_intent": "shipping_delivery_status",
+        "pred_intent": "shipping_delivery_status",
+        "true_action": "auto_handle",
+        "pred_action": "auto_handle",
+        "routing_reason": "none",
+        "drafted_reply": "We're sorry to hear your package is delayed! Please send us a DM with your order number so we can investigate with the carrier."
+      },
+      {
+        "id": "g_005",
+        "message": "Order #701-4419201 missed the prime same-day delivery cutoff.",
+        "true_intent": "shipping_delivery_status",
+        "pred_intent": "shipping_delivery_status",
+        "true_action": "auto_handle",
+        "pred_action": "auto_handle",
+        "routing_reason": "none",
+        "drafted_reply": "Thanks for reaching out! Please send us a direct message with your order ID and address so we can locate your shipment."
+      },
+      {
+        "id": "g_006",
+        "message": "The glass jar inside my Amazon box arrived completely shattered.",
+        "true_intent": "missing_damaged_item",
+        "pred_intent": "other_unclear",
+        "true_action": "auto_handle",
+        "pred_action": "auto_handle",
+        "routing_reason": "none",
+        "drafted_reply": "Apologies for the damaged shipment! Please send us a direct message with your order details and photos so we can issue a full replacement."
+      },
+      {
+        "id": "g_007",
+        "message": "I ordered 3 books in order #114-8849102 but only 2 were inside.",
+        "true_intent": "missing_damaged_item",
+        "pred_intent": "other_unclear",
+        "true_action": "auto_handle",
+        "pred_action": "auto_handle",
+        "routing_reason": "none",
+        "drafted_reply": "Apologies for the damaged shipment! Please send us a direct message with your order details and photos so we can issue a full replacement."
+      },
+      {
+        "id": "g_008",
+        "message": "Received wrong size shoes in my delivery today.",
+        "true_intent": "missing_damaged_item",
+        "pred_intent": "shipping_delivery_status",
+        "true_action": "auto_handle",
+        "pred_action": "auto_handle",
+        "routing_reason": "none",
+        "drafted_reply": "We want to make this right! Please DM us your order ID so we can ship out the missing item immediately."
+      },
+      {
+        "id": "g_009",
+        "message": "Shampoo bottle leaked all over the other items in the parcel.",
+        "true_intent": "missing_damaged_item",
+        "pred_intent": "other_unclear",
+        "true_action": "auto_handle",
+        "pred_action": "auto_handle",
+        "routing_reason": "none",
+        "drafted_reply": "Oh no! We're so sorry to hear an item was missing from your delivery. Please DM us your order number so we can send a replacement."
+      },
+      {
+        "id": "g_010",
+        "message": "Package box was ripped open and item was missing.",
+        "true_intent": "missing_damaged_item",
+        "pred_intent": "shipping_delivery_status",
+        "true_action": "auto_handle",
+        "pred_action": "auto_handle",
+        "routing_reason": "none",
+        "drafted_reply": "Apologies for the package damage. Send us a direct message with your order number so our team can assist you."
+      }
+    ]
+  },
+  "Full SupportAgent": {
+    "agent_name": "Full SupportAgent",
+    "sample_size": 200,
+    "intent_accuracy": 53.5,
+    "intent_macro_f1": 45.0,
+    "routing_accuracy": 58.5,
+    "routing_auto_handle_precision": 76.4,
+    "routing_auto_handle_recall": 52.31,
+    "routing_auto_handle_f1": 62.1,
+    "retrieval_hit_rate_at_3": 79.0,
+    "confusion_matrix": {
+      "labels": [
+        "account_login_security",
+        "billing_payment_issue",
+        "cancellation_order_change",
+        "missing_damaged_item",
+        "other_unclear",
+        "prime_digital_services",
+        "product_stock_inquiry",
+        "refund_return_request",
+        "shipping_delivery_status"
+      ],
+      "matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          20,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          20,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          19,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          22,
+          0,
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          23,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          19,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          19,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          23,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          2,
+          1,
+          0,
+          0,
+          23
+        ]
+      ]
+    },
+    "predictions_sample": [
+      {
+        "id": "g_001",
+        "message": "Where is my package #112-9482019? It was due yesterday.",
+        "true_intent": "shipping_delivery_status",
+        "pred_intent": "shipping_delivery_status",
+        "true_action": "auto_handle",
+        "pred_action": "auto_handle",
+        "routing_reason": "none",
+        "drafted_reply": "We apologize for the inconvenience. Please send us your order ID via Direct Message so our support team can assist you directly."
+      },
+      {
+        "id": "g_002",
+        "message": "Tracking number TBA94019241 has no updates for 4 days.",
+        "true_intent": "shipping_delivery_status",
+        "pred_intent": "shipping_delivery_status",
+        "true_action": "auto_handle",
+        "pred_action": "auto_handle",
+        "routing_reason": "none",
+        "drafted_reply": "We apologize for the inconvenience. Please send us your order ID via Direct Message so our support team can assist you directly."
+      },
+      {
+        "id": "g_003",
+        "message": "Package says delivered but doorstep is empty.",
+        "true_intent": "shipping_delivery_status",
+        "pred_intent": "shipping_delivery_status",
+        "true_action": "auto_handle",
+        "pred_action": "auto_handle",
+        "routing_reason": "none",
+        "drafted_reply": "We apologize for the inconvenience. Please send us your order ID via Direct Message so our support team can assist you directly."
+      },
+      {
+        "id": "g_004",
+        "message": "My delivery estimate got changed from Friday to Monday. Why?",
+        "true_intent": "shipping_delivery_status",
+        "pred_intent": "shipping_delivery_status",
+        "true_action": "auto_handle",
+        "pred_action": "auto_handle",
+        "routing_reason": "none",
+        "drafted_reply": "We apologize for the inconvenience. Please send us your order ID via Direct Message so our support team can assist you directly."
+      },
+      {
+        "id": "g_005",
+        "message": "Order #701-4419201 missed the prime same-day delivery cutoff.",
+        "true_intent": "shipping_delivery_status",
+        "pred_intent": "shipping_delivery_status",
+        "true_action": "auto_handle",
+        "pred_action": "auto_handle",
+        "routing_reason": "none",
+        "drafted_reply": "We apologize for the inconvenience. Please send us your order ID via Direct Message so our support team can assist you directly."
+      },
+      {
+        "id": "g_006",
+        "message": "The glass jar inside my Amazon box arrived completely shattered.",
+        "true_intent": "missing_damaged_item",
+        "pred_intent": "other_unclear",
+        "true_action": "auto_handle",
+        "pred_action": "escalate",
+        "routing_reason": "low_confidence_intent",
+        "drafted_reply": "We apologize for the inconvenience. Please send us your order ID via Direct Message so our support team can assist you directly."
+      },
+      {
+        "id": "g_007",
+        "message": "I ordered 3 books in order #114-8849102 but only 2 were inside.",
+        "true_intent": "missing_damaged_item",
+        "pred_intent": "other_unclear",
+        "true_action": "auto_handle",
+        "pred_action": "escalate",
+        "routing_reason": "low_confidence_intent",
+        "drafted_reply": "We apologize for the inconvenience. Please send us your order ID via Direct Message so our support team can assist you directly."
+      },
+      {
+        "id": "g_008",
+        "message": "Received wrong size shoes in my delivery today.",
+        "true_intent": "missing_damaged_item",
+        "pred_intent": "shipping_delivery_status",
+        "true_action": "auto_handle",
+        "pred_action": "auto_handle",
+        "routing_reason": "none",
+        "drafted_reply": "We apologize for the inconvenience. Please send us your order ID via Direct Message so our support team can assist you directly."
+      },
+      {
+        "id": "g_009",
+        "message": "Shampoo bottle leaked all over the other items in the parcel.",
+        "true_intent": "missing_damaged_item",
+        "pred_intent": "other_unclear",
+        "true_action": "auto_handle",
+        "pred_action": "escalate",
+        "routing_reason": "low_confidence_intent",
+        "drafted_reply": "We apologize for the inconvenience. Please send us your order ID via Direct Message so our support team can assist you directly."
+      },
+      {
+        "id": "g_010",
+        "message": "Package box was ripped open and item was missing.",
+        "true_intent": "missing_damaged_item",
+        "pred_intent": "other_unclear",
+        "true_action": "auto_handle",
+        "pred_action": "escalate",
+        "routing_reason": "low_confidence_intent",
+        "drafted_reply": "We apologize for the inconvenience. Please send us your order ID via Direct Message so our support team can assist you directly."
+      }
+    ]
+  }
+}

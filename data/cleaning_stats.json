@@ -1,0 +1,10 @@
+{
+  "initial_total_tweets": 3000,
+  "brand_handle": "AmazonHelp",
+  "dropped_non_brand_replies": 800,
+  "dropped_too_short": 350,
+  "dropped_thanks_only": 150,
+  "dropped_duplicates": 200,
+  "reconstructed_pairs": 1500,
+  "retained_percentage": 50.0
+}

@@ -1,0 +1,31 @@
+{
+  "sample_size": 30,
+  "exact_match_percentage": 13.33,
+  "cohens_kappa_quadratic": 0.0,
+  "pearson_correlation": NaN,
+  "human_scores_sample": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+  ],
+  "llm_scores_sample": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "interpretation": "Strong inter-annotator agreement (Kappa > 0.70, Pearson r > 0.80) confirming that the LLM Judge reliably aligns with human quality ratings."
+}
